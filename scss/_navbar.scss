@@ -11,6 +11,8 @@
     background-color: $primary;
     @include heading-font;
   }
+  
+  /*
   .navbar-brand {
     color: $primary;
     @include script-font;
@@ -21,6 +23,12 @@
       color: darken($primary, 10%);
     }
   }
+  */
+
+  .navbar-logo > img {
+    height: 40px;
+  }
+
   .navbar-nav {
     .nav-item {
       .nav-link {

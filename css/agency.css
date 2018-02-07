@@ -130,9 +130,10 @@ img::-moz-selection {
         font-size: 1.25em;
         padding: 12px 0; } }
 header.masthead {
+  background-color: #aaa;
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/main-bg.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

@@ -47,4 +47,12 @@
     $(".navbar").removeClass("d-none");
   })
 
+  // Stopping the youtube video when closing the video modal
+  $('#video-modal').on('hidden.bs.modal', function () {
+    $('.youtube_player_iframe').each(function(){
+      this.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*')
+    });
+  })
+
+
 })(jQuery); // End of use strict

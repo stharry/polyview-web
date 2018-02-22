@@ -73,11 +73,13 @@
 .portfolio-modal {
   padding-right: 0px !important;
   .modal-dialog {
-    margin: 1rem;
+    margin: 0;
+    margin-top: 1rem;
     max-width: 100vw;
   }
   .modal-content {
-    padding: 100px 0;
+    background-color: initial;
+    padding: 20px 0;
     text-align: center;
     h2 {
       font-size: 3em;
@@ -102,10 +104,26 @@
     button {
       cursor: pointer;
     }
+    .container {
+      max-width: 960px;
+      .video-container {
+        width: 100%;
+        padding-top: 56.25%;
+        position: relative;
+
+        .youtube_player_iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
   }
   .close-modal {
     position: absolute;
-    top: 25px;
+    top: 0;
     right: 25px;
     width: 75px;
     height: 75px;
@@ -124,7 +142,7 @@
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
-      background-color: $gray-900;
+      background-color: white;
       .rl {
         /* Safari and Chrome */
         z-index: 1052;
@@ -134,11 +152,17 @@
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
-        background-color: $gray-900;
+        background-color: white;
       }
     }
   }
   .modal-backdrop {
 
+  }
+}
+
+@media(max-width:992px) {
+  .close-modal {
+    display: none;
   }
 }

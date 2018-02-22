@@ -26,7 +26,8 @@
   */
 
   .navbar-logo > img {
-    height: 60px;
+    display: initial;
+    height: 40px;
   }
 
   .navbar-nav {
@@ -61,6 +62,10 @@
       -moz-transition: all 0.3s;
       transition: all 0.3s;
     }
+    .navbar-logo > img {
+      display: none;
+      height: 60px;
+    }
     .navbar-nav {
       .nav-item {
         .nav-link {
@@ -77,6 +82,7 @@
         padding: 12px 0;
       }
       .navbar-logo > img {
+        display: initial;
         height: 40px;
       }
     }

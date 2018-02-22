@@ -95,7 +95,8 @@ img::-moz-selection {
     background-color: #147abf;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   #mainNav .navbar-logo > img {
-    height: 60px; }
+    display: initial;
+    height: 40px; }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
@@ -120,6 +121,9 @@ img::-moz-selection {
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s; }
+    #mainNav .navbar-logo > img {
+      display: none;
+      height: 60px; }
     #mainNav .navbar-nav .nav-item .nav-link {
       padding: 1.1em 1em !important; }
     #mainNav.navbar-shrink {
@@ -130,6 +134,7 @@ img::-moz-selection {
         font-size: 1.25em;
         padding: 12px 0; }
       #mainNav.navbar-shrink .navbar-logo > img {
+        display: initial;
         height: 40px; } }
 header.masthead {
   background-color: #aaa;
@@ -169,7 +174,7 @@ header.masthead {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
+    padding-top: 150px;
     padding-bottom: 200px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 40px;

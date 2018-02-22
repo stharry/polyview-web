@@ -1,4 +1,13 @@
 // Styling for the timeline section
+#work {
+  background-color: #ffd900;
+
+  .section-heading, .timeline-heading > h4 {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(135,115,1, 0.35);
+  }
+}
+
 .timeline {
   position: relative;
   padding: 0;
@@ -11,7 +20,7 @@
     width: 2px;
     margin-left: -1.5px;
     content: '';
-    background-color: $gray-200;
+    background-color: #E9C900;
   }
   > li {
     position: relative;
@@ -53,7 +62,7 @@
       margin-left: 0;
       text-align: center;
       color: white;
-      border: 7px solid $gray-200;
+      border: 7px solid #E9C900;
       border-radius: 100%;
       h4 {
         font-size: 10px;

@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "Futura Bold";
+  src: url("../fonts/Futura-ICG-Bold.ttf"); }
+@font-face {
+  font-family: "Futura Light";
+  src: url("../fonts/Futura-ICG-Light.ttf"); }
 body {
   overflow-x: hidden;
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Futura Light', serif; }
 
 p {
   line-height: 1.75; }
@@ -20,7 +26,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: "Futura Bold", 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 section {
   padding: 100px 0; }
@@ -40,7 +46,7 @@ section {
   section {
     padding: 150px 0; } }
 .btn {
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Futura Bold", 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
 .btn-xl {
@@ -93,7 +99,7 @@ img::-moz-selection {
     color: white;
     border: 0;
     background-color: #147abf;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: "Futura Bold", 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   #mainNav .navbar-logo > img {
     display: initial;
     height: 40px; }
@@ -171,7 +177,7 @@ header.masthead {
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: "Futura Bold", 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
@@ -188,7 +194,7 @@ header.masthead {
       font-weight: 700;
       line-height: 75px;
       margin-bottom: 50px;
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; } }
+      font-family: "Futura Bold", 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; } }
 .service-heading {
   margin: 15px 0;
   text-transform: none; }
@@ -327,6 +333,12 @@ header.masthead {
 @media (max-width: 992px) {
   .close-modal {
     display: none; } }
+#work {
+  background-color: #ffd900; }
+  #work .section-heading, #work .timeline-heading > h4 {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(135, 115, 1, 0.35); }
+
 .timeline {
   position: relative;
   padding: 0;
@@ -339,7 +351,7 @@ header.masthead {
     width: 2px;
     margin-left: -1.5px;
     content: '';
-    background-color: #e9ecef; }
+    background-color: #E9C900; }
   .timeline > li {
     position: relative;
     min-height: 50px;
@@ -374,7 +386,7 @@ header.masthead {
       margin-left: 0;
       text-align: center;
       color: white;
-      border: 7px solid #e9ecef;
+      border: 7px solid #E9C900;
       border-radius: 100%; }
       .timeline > li .timeline-image h4 {
         font-size: 10px;
@@ -493,21 +505,21 @@ section#contact {
   section#contact ::-webkit-input-placeholder {
     font-weight: 700;
     color: #ced4da;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: "Futura Bold", 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   section#contact :-moz-placeholder {
     font-weight: 700;
     color: #ced4da;
     /* Firefox 18- */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: "Futura Bold", 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   section#contact ::-moz-placeholder {
     font-weight: 700;
     color: #ced4da;
     /* Firefox 19+ */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: "Futura Bold", 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   section#contact :-ms-input-placeholder {
     font-weight: 700;
     color: #ced4da;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: "Futura Bold", 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 footer {
   padding: 25px 0;
@@ -516,13 +528,13 @@ footer {
     font-size: 90%;
     line-height: 40px;
     text-transform: none;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: "Futura Bold", 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   footer ul.quicklinks {
     font-size: 90%;
     line-height: 40px;
     margin-bottom: 0;
     text-transform: none;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: "Futura Bold", 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 ul.social-buttons {
   margin-bottom: 0; }

@@ -7,6 +7,16 @@
   background-size: cover;
 }
 
+@font-face {
+	font-family: "Futura Bold";
+	src: url("../fonts/Futura-ICG-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Futura Light";
+	src: url("../fonts/Futura-ICG-Light.ttf");
+}
+
 // Font Mixins
 @mixin serif-font {
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -15,8 +25,11 @@
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 @mixin body-font {
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Futura Light', serif;
 }
 @mixin heading-font {
+  font-family: "Futura Bold", 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin navbar-font {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

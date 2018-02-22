@@ -196,6 +196,9 @@ header.masthead {
 .clients img {
   filter: grayscale(100%); }
 
+.solution-icon {
+  width: 112px; }
+
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px; }

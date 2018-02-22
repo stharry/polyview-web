@@ -194,7 +194,7 @@ header.masthead {
   text-transform: none; }
 
 .clients img {
-  filter: grayscale(100%); }
+  height: 50px; }
 
 .solution-icon {
   width: 112px; }

@@ -6,7 +6,7 @@
   src: url("../fonts/Futura-ICG-Light.ttf"); }
 body {
   overflow-x: hidden;
-  font-family: 'Futura Light', serif; }
+  font-family: 'Futura Light', 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 p {
   line-height: 1.75; }
@@ -31,7 +31,7 @@ h6 {
 section {
   padding: 100px 0; }
   section h2.section-heading {
-    font-size: 40px;
+    font-size: 3rem;
     margin-top: 0;
     margin-bottom: 15px; }
   section h3.section-subheading {
@@ -41,6 +41,11 @@ section {
     margin-bottom: 75px;
     text-transform: none;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  section h4.section-subheading {
+    font-size: 2rem; }
+  section p.section-paragraph {
+    font-size: 1.5rem;
+    line-height: 35px; }
 
 @media (min-width: 768px) {
   section {
@@ -416,6 +421,8 @@ header.masthead {
   .timeline .timeline-body > ul,
   .timeline .timeline-body > p {
     margin-bottom: 0; }
+  .timeline .timeline-body > p {
+    color: #7b6a00; }
 
 @media (min-width: 768px) {
   .timeline:before {

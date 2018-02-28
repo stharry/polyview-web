@@ -564,7 +564,7 @@ ul.social-buttons {
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
       background-color: #147abf; }
 
-.feature-img {
-  /*padding: 5%;*/ }
+#features {
+  background-color: #e9eaea; }
 
 /*# sourceMappingURL=agency.css.map */

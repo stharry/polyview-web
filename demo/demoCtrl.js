@@ -19,5 +19,10 @@ demoApp.controller('demoCtrl', function($scope, $sce, $location, $window) {
     } else {
         $scope.modelName = model.name;
         $scope.claraEmbedUrl = $sce.trustAsResourceUrl("https://clara.io/player/v2/" + model.claraId + "?tools=hide");    
+
+        gtag('event', 'view_item', {
+            'event_category': 'models',
+            'event_label': model.name
+        });
     }
 });

@@ -57,6 +57,11 @@
   $('#video-btn').click(function () {
     var currentSrc = $('.youtube_player_iframe').attr("src");
     $('.youtube_player_iframe').attr("src", currentSrc + "&autoplay=1");
+
+    gtag('event', 'play', {
+      'event_category': 'videos',
+      'event_label': 'Polyview Demo'
+    });
   })
 
   $(document).ready(function () {

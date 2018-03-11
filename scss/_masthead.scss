@@ -12,7 +12,7 @@ header.masthead {
     padding-top: 150px;
     padding-bottom: 100px;
     .intro-lead-in {
-      background-image: linear-gradient(to right, #F6E10B, #CFA802);
+      background-image: linear-gradient(to right, #f4df0a, #ead20e, #cfa803);
       color: transparent;
       -webkit-background-clip: text;
       background-clip: text;
@@ -25,7 +25,7 @@ header.masthead {
 
     }
     .intro-heading {
-      background-image: linear-gradient(to right, #F6E10B, #CFA802);
+      background-image: linear-gradient(to right, #f4df0a, #ead20e, #cfa803);
       color: transparent;
       -webkit-background-clip: text;
       background-clip: text;
@@ -52,19 +52,23 @@ header.masthead {
     .intro-text {
       padding-top: 100px;
       padding-bottom: 200px;
-      .intro-lead-in {
-        font-size: 27px;
-        font-style: italic;
-        line-height: 27px;
-        margin-bottom: 7px;
-        @include serif-font;
-      }
-      .intro-heading {
-        font-size: 50px;
-        font-weight: 700;
-        line-height: 50px;
-        margin-bottom: 50px;
-        @include heading-font;
+      .intro-text-heading {
+        position: relative;
+        bottom: 20px;
+        .intro-lead-in {
+          font-size: 25px;
+          font-style: italic;
+          line-height: 25px;
+          margin-bottom: 7px;
+          @include serif-font;
+        }
+        .intro-heading {
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 40px;
+          margin-bottom: 20px;
+          @include heading-font;
+        }
       }
     }
   }

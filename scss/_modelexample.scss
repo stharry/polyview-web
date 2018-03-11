@@ -1,6 +1,10 @@
 
 #example {
 
+    background-color: #07135f;
+    h2.section-heading {
+        color: white;
+    }
     .viewer-container {
         padding-top: 50%;
         position: relative;
@@ -12,6 +16,7 @@
             left: 0;
             width: 100%;
             height: 100%;
+            border: none;
         }
     }
 

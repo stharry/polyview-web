@@ -12,6 +12,18 @@ demoApp.controller('demoCtrl', function($scope, $sce, $location, $window) {
         "kara-armchair": {
             name: "Kara Armchair",
             claraId: "597cbc9c-7ae6-47a0-bbc7-440691cc8987"            
+        },
+        "wooden-train": {
+            name: "Wooden Train",
+            claraId: "fad35c6d-6e49-4f4e-b7ee-fe154e5599dd"            
+        },
+        "luxury-lamp": {
+            name: "Luxury Lamp",
+            claraId: "41909d38-403c-4a6b-806b-0996f83e7ea1"            
+        },
+        "brown-leather-sofa": {
+            name: "Brown Leather Sofa",
+            claraId: "88775df1-b3a5-4fc5-8425-90b785d2e5bf"            
         }
     }
 

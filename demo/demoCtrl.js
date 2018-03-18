@@ -19,7 +19,7 @@ demoApp.controller('demoCtrl', function($scope, $sce, $location, $window) {
         },
         "luxury-lamp": {
             name: "Luxury Lamp",
-            claraId: "41909d38-403c-4a6b-806b-0996f83e7ea1"            
+            claraId: "aaa069ef-6ad0-4c7a-9538-725f79e18c9d"            
         },
         "brown-leather-sofa": {
             name: "Brown Leather Sofa",

@@ -24,6 +24,10 @@ demoApp.controller('demoCtrl', function($scope, $sce, $location, $window) {
         "brown-leather-sofa": {
             name: "Brown Leather Sofa",
             claraId: "88775df1-b3a5-4fc5-8425-90b785d2e5bf"            
+        },
+        "pink-sneakers": {
+            name: "Pink Sneakers",
+            claraId: "32a47cde-83e3-4d80-89b7-b9b8893ed806"            
         }
     }
 

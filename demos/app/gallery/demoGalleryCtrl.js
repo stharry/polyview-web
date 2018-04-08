@@ -1,4 +1,4 @@
 
-app.controller('demoGalleryCtrl', function($scope) {
-    $scope.test = "blabla"
+app.controller('demoGalleryCtrl', function($scope, modelService) {
+    $scope.models = modelService.models;
 })

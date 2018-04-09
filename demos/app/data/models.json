@@ -1,30 +1,37 @@
 {
     "office-chair": {
         "name": "Office Chair",
-        "claraId": "0f0e7e13-c57b-471d-b3b6-4091bd051ab0"
+        "claraId": "0f0e7e13-c57b-471d-b3b6-4091bd051ab0",
+        "thumbnail": "assets/images/office-chair.png"
     },
     "tanning-bed": {
         "name": "Tanning Bed",
-        "claraId": "c9fd9abe-67cc-43c7-96e1-d8ecf59c68af"
+        "claraId": "c9fd9abe-67cc-43c7-96e1-d8ecf59c68af",
+        "thumbnail": "assets/images/office-chair.png"
     },
     "kara-armchair": {
         "name": "Kara Armchair",
-        "claraId": "597cbc9c-7ae6-47a0-bbc7-440691cc8987"            
+        "claraId": "597cbc9c-7ae6-47a0-bbc7-440691cc8987",
+        "thumbnail": "assets/images/office-chair.png"
     },
     "wooden-train": {
         "name": "Wooden Train",
-        "claraId": "fad35c6d-6e49-4f4e-b7ee-fe154e5599dd"            
+        "claraId": "fad35c6d-6e49-4f4e-b7ee-fe154e5599dd",
+        "thumbnail": "assets/images/office-chair.png"
     },
     "luxury-lamp": {
         "name": "Luxury Lamp",
-        "claraId": "aaa069ef-6ad0-4c7a-9538-725f79e18c9d"            
+        "claraId": "aaa069ef-6ad0-4c7a-9538-725f79e18c9d",
+        "thumbnail": "assets/images/office-chair.png"            
     },
     "brown-leather-sofa": {
         "name": "Brown Leather Sofa",
-        "claraId": "88775df1-b3a5-4fc5-8425-90b785d2e5bf"            
+        "claraId": "88775df1-b3a5-4fc5-8425-90b785d2e5bf",
+        "thumbnail": "assets/images/office-chair.png"            
     },
     "pink-sneakers": {
         "name": "Pink Sneakers",
-        "claraId": "32a47cde-83e3-4d80-89b7-b9b8893ed806"            
+        "claraId": "32a47cde-83e3-4d80-89b7-b9b8893ed806",
+        "thumbnail": "assets/images/office-chair.png"            
     }
 }

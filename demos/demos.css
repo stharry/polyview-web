@@ -45,6 +45,10 @@ footer span.copyright {
     font-family: "Futura Bold", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.demo-item {
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .viewer-container {
         margin: 0;

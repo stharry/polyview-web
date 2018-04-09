@@ -1,14 +1,31 @@
 
-app.factory('modelService', function($http, $log) {
+app.factory('modelService', function($http, $log, $q) {
     var models = {};
+    var wasEverLoaded = false;
+    
+    function load() {
+        var async = $q.defer();
 
-    $http.get('app/data/models.json').then(function(response) {
-        Object.assign(models, response.data);
-    }, function(response) {
-        $log.error("error in loading demo models data")
-    })
+        // Loading the data from the json only once
+        if (wasEverLoaded) {
+            async.resolve();
+        } else {
+            $http.get('app/data/models.json').then(function(response) {
+                wasEverLoaded = true;
+                Object.assign(models, response.data);
+                async.resolve();
+            }, function(response) {
+                $log.error("error in loading demo models data");
+                async.reject();
+            });
+        }
+
+        return async.promise;
+    }
+
 
     return {
-        models: models
+        models: models,
+        load: load
     }
 })

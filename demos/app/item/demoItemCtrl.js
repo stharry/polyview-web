@@ -1,5 +1,8 @@
 
-app.controller('demoItemCtrl', function($scope, $routeParams) {
-    $scope.test = $routeParams.modelKey;
-    //$scope.models = modelService.models;
+app.controller('demoItemCtrl', function($scope, modelService, $routeParams) {
+
+    modelService.load().then(function() {
+        $scope.model = modelService.models[$routeParams.modelKey];
+    });
+    
 });

@@ -12,3 +12,8 @@ app.config(function($routeProvider) {
     })
 });
 
+app.controller('navCtrl', function($scope, $location) {
+    $scope.showMoreDemosMenu = function() {
+        return $location.path() != "/";
+    }
+})

@@ -46,11 +46,16 @@
 
 <body ng-app="demosApp">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand navbar-dark">
+    <nav class="navbar navbar-expand navbar-dark" ng-controller="navCtrl">
         <div class="container">
             <a class="navbar-logo pull-left js-scroll-trigger" href="../">
                 <img src="../img/logos/polyview-logo-white.png" alt="polyview logo white">
             </a>
+            <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/demos" ng-show="showMoreDemosMenu()">More Demos</a>
+                    </li>
+            </ul>
         </div>
     </nav>
 

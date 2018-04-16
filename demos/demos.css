@@ -45,6 +45,28 @@ footer span.copyright {
     font-family: "Futura Bold", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+ul.social-buttons {
+    margin-bottom: 0; 
+}
+ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    background-color: #212529; 
+}
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+    background-color: #147abf; 
+}
+  
+
 .demo-item {
     cursor: pointer;
 }

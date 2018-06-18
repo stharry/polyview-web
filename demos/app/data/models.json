@@ -43,6 +43,11 @@
         "name": "Aemes Chair",
         "claraId": "34539c1f-48cd-4d68-8048-265284d85247",
         "thumbnail": "assets/images/Aemes_chair_Thumbnail_01.jpg"            
+    },
+    "garden-set": {
+        "name": "Garden Set",
+        "claraId": "ddc07bab-1351-4b86-acc0-7a6e27a97f89",
+        "thumbnail": "assets/images/Garden_set_Thumbnail_01.jpg"            
     }
     
 }

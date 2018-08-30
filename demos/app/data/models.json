@@ -49,10 +49,20 @@
         "claraId": "ddc07bab-1351-4b86-acc0-7a6e27a97f89",
         "thumbnail": "assets/images/Garden_set_Thumbnail_01.jpg"            
     },
-    "illesteva-pamela-black": {
-        "name": "Pamela Black",
-        "claraId": "611ee5d8-9526-4a77-b711-e196c1f43307",
-        "thumbnail": "assets/images/illesteva_Pamela_Black_Thumbnail.jpg"            
+    "illesteva-pamela": {
+        "name": "illesteva Pamela Sunglass",
+        "thumbnail": "assets/images/illesteva_Pamela_Black_Thumbnail.jpg",
+        "colorVariations" : [{
+            "techName": "black",
+            "displayName": "Black",
+            "color": "black",
+            "claraId": "611ee5d8-9526-4a77-b711-e196c1f43307"
+        }, {
+            "techName": "pink",
+            "displayName": "Pink",
+            "color": "pink",
+            "claraId": "ce10a16e-0a80-4f4c-9d4f-d1eed50b6239"        
+        }]
     }
 
     

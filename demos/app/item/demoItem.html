@@ -7,11 +7,18 @@
             </div>
         </div>
         <div class="row pb-5">
-            <div class="col-lg-12 ">
+            <div ng-class="{'col-lg-12' : !model.colorVariations, 'col-lg-10' : model.colorVariations}">
+            <!-- <div class="col-lg-10"> -->
                 <div class="viewer-container">
                     <iframe class="viewer-iframe" ng-src="{{model.claraEmbedId}}"></iframe>
                 </div>
             </div>
+            <div class="variations col-lg-2" ng-if="model.colorVariations">
+                <h5>Color Variations</h5>
+                <div class="variation" ng-repeat="colorVariation in model.colorVariations">
+                    <button style="background-color:{{colorVariation.color}}" id="{{colorVariation.techName}}" ng-click="updateModel(colorVariation)"></button>
+                    <label for="{{colorVariation.techName}}">{{colorVariation.displayName}}</label>
+                </div>
         </div>
     </div>
 </section>

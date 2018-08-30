@@ -71,6 +71,33 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     cursor: pointer;
 }
 
+.variations > h5 {
+    margin: 10px;
+}
+
+.variation {
+    margin: 5px 10px;
+    cursor: pointer;
+}
+.variation > button {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: pink;
+    cursor: pointer;
+}
+
+.variation > label {
+    vertical-align: middle;
+    height: 30px;
+    cursor: pointer;
+}
+
+.variation > button:focus {
+    outline:0;
+}
+
+
 @media (max-width: 768px) {
     .viewer-container {
         margin: 0;

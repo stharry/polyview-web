@@ -12,8 +12,22 @@ app.config(function($routeProvider) {
     })
 });
 
-app.controller('navCtrl', function($scope, $location) {
+app.controller('navCtrl', function($scope, $location, modelService) {
+    $scope.models = modelService.models;
+    modelService.load();
+
+    // Not showing the "more demos" link in two cases: (1) we are in the gallery page;
+    // (2) we are in a model page which is "unlisted"
     $scope.showMoreDemosMenu = function() {
-        return $location.path() != "/";
+        if ($location.path() === "/") {
+            return false;
+        } else {
+            var modelKey = $location.path().substr(1, $location.path().length - 1)
+            if ($scope.models[modelKey] && !$scope.models[modelKey].unlisted) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     }
 })

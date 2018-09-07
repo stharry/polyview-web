@@ -64,6 +64,12 @@
             "claraId": "ce10a16e-0a80-4f4c-9d4f-d1eed50b6239"        
         }],
         "unlisted": true
+    },
+    "house": {
+        "name":"House",
+        "claraId": "df151beb-85b7-46e6-89f3-6ef76a5b20de",        
+        "thumbnail": "assets/images/House_Thumbnail.jpg",
+        "unlisted": true
     }
 
     

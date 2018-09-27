@@ -9,6 +9,12 @@
         "claraId": "597cbc9c-7ae6-47a0-bbc7-440691cc8987",
         "thumbnail": "assets/images/Kara_Thumbnail_01.jpg"
     },
+        "bethesda_house": {
+        "name":"Bethesda House",
+        "claraId": "f5f200ab-d8b8-4161-9ffa-3c0db9530c8d",        
+        "thumbnail": "assets/images/Bethesda_house_Thumbanil.jpg",
+        "unlisted": false
+    },
     "dinning-table": {
         "name": "Dinning Table",
         "claraId": "51e342cf-b669-4020-a1ff-0230dc93f3f4",
@@ -64,13 +70,8 @@
             "claraId": "ce10a16e-0a80-4f4c-9d4f-d1eed50b6239"        
         }],
         "unlisted": true
-    },
-    "house": {
-        "name":"House",
-        "claraId": "df151beb-85b7-46e6-89f3-6ef76a5b20de",        
-        "thumbnail": "assets/images/House_Thumbnail.jpg",
-        "unlisted": true
     }
+
 
     
 }

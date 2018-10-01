@@ -6,6 +6,8 @@ app.config(function($routeProvider) {
     .when('/', {
       templateUrl: 'app/gallery/demoGallery.html',
       controller: 'demoGalleryCtrl'
+    }).when('/ios12', {
+        templateUrl: 'app/ios12/ios12.html'
     }).when('/:modelKey', {
         templateUrl: 'app/item/demoItem.html',
         controller: 'demoItemCtrl'

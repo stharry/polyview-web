@@ -9,7 +9,7 @@ app.controller('demoItemCtrl', function($scope, modelService, $routeParams, $sce
                 $scope.model.claraEmbedId = $sce.trustAsResourceUrl("https://clara.io/player/v2/" + $scope.model.claraId + "?tools=hide");
             } else {
                 $scope.model.claraEmbedId = $sce.trustAsResourceUrl("https://clara.io/player/v2/" + $scope.model.colorVariations[0].claraId + "?tools=hide");
-                $scope.model.selectedVariation = $scope.model.colorVariations[0];
+                $scope.model.usdz = $scope.model.colorVariations[0].usdz;
             }
 
             window.dataLayer = window.dataLayer || [];
@@ -28,7 +28,7 @@ app.controller('demoItemCtrl', function($scope, modelService, $routeParams, $sce
 
     $scope.updateModel = function(colorVariation) {
         $scope.model.claraEmbedId = $sce.trustAsResourceUrl("https://clara.io/player/v2/" + colorVariation.claraId + "?tools=hide");
-        $scope.model.selectedVariation = colorVariation;
+        $scope.model.usdz = colorVariation.usdz;
     }    
 
     $scope.showAppleArQuickLook = function() {
@@ -42,15 +42,17 @@ app.controller('demoItemCtrl', function($scope, modelService, $routeParams, $sce
     }
 
     function isSafariFormatAvailable() {
-        if (!$scope.model.colorVariations) {
-            // regular model, cheking if we have a usdz file
-            return $scope.model.usdz ? true : false
-        } else {
-            // model with variations, checking that the selected variation has a usdz file
-            return $scope.model.selectedVariation.usdz ? true : false;
-        }
+        return $scope.model.usdz ? true : false
+        // if (!$scope.model.colorVariations) {
+        //     // regular model, cheking if we have a usdz file
+        //     return $scope.model.usdz ? true : false
+        // } else {
+        //     // model with variations, checking that the selected variation has a usdz file
+        //     return $scope.model.selectedVariation.usdz ? true : false;
+        // }
     }
 
+    /*
     $scope.getUsdzFile = function() {
         if (!$scope.model.colorVariations) {
             return $scope.model.usdz;
@@ -58,6 +60,7 @@ app.controller('demoItemCtrl', function($scope, modelService, $routeParams, $sce
             return $scope.model.selectedVariation.usdz;
         }
     }
+    */
 
     function isSafari12() {
         if (deviceDetector.os === "ios" && deviceDetector.browser === "safari" && parseInt(deviceDetector.browser_version) >= 12) {

@@ -1,5 +1,5 @@
 
-var app = angular.module('demosApp', ['ngRoute']);
+var app = angular.module('demosApp', ['ngRoute', 'ng.deviceDetector']);
 
 app.config(function($routeProvider) {
     $routeProvider

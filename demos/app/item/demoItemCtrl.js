@@ -1,5 +1,5 @@
 
-app.controller('demoItemCtrl', function($scope, modelService, $routeParams, $sce, $location) {
+app.controller('demoItemCtrl', function($scope, modelService, $routeParams, $sce, $location, deviceDetector) {
 
     modelService.load().then(function() {
         $scope.model = modelService.models[$routeParams.modelKey];
@@ -28,4 +28,26 @@ app.controller('demoItemCtrl', function($scope, modelService, $routeParams, $sce
     $scope.updateModel = function(colorVariation) {
         $scope.model.claraEmbedId = $sce.trustAsResourceUrl("https://clara.io/player/v2/" + colorVariation.claraId + "?tools=hide");
     }    
+
+    $scope.showAppleArQuickLook = function() {
+        // First checking if there is an ios format file available (usdz)
+        // Then, if the file is available, checking if we are running on a Safari 12 browser
+        if (isSafariFormatAvailable() && isSafari12()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function isSafariFormatAvailable() {
+        return $scope.model.safari ? true : false
+    }
+
+    function isSafari12() {
+        if (deviceDetector.os === "ios" && deviceDetector.browser === "safari" && parseInt(deviceDetector.browser_version) >= 12) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 });

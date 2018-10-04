@@ -7,7 +7,8 @@
     "kara-armchair": {
         "name": "Kara Armchair",
         "claraId": "597cbc9c-7ae6-47a0-bbc7-440691cc8987",
-        "thumbnail": "assets/images/Kara_Thumbnail_01.jpg"
+        "thumbnail": "assets/images/Kara_Thumbnail_01.jpg",
+        "safari": "assets/models/kara_armchair.usdz"
     },
     "dinning-table": {
         "name": "Dinning Table",

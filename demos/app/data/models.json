@@ -8,7 +8,7 @@
         "name": "Kara Armchair",
         "claraId": "597cbc9c-7ae6-47a0-bbc7-440691cc8987",
         "thumbnail": "assets/images/Kara_Thumbnail_01.jpg",
-        "safari": "assets/models/kara_armchair.usdz"
+        "usdz": "assets/apple-models/kara_armchair.usdz"
     },
     "dinning-table": {
         "name": "Dinning Table",
@@ -57,7 +57,8 @@
             "techName": "black",
             "displayName": "Black",
             "color": "black",
-            "claraId": "611ee5d8-9526-4a77-b711-e196c1f43307"
+            "claraId": "611ee5d8-9526-4a77-b711-e196c1f43307",
+            "usdz": "assets/apple-models/illesteva_Pamela_Black.usdz"
         }, {
             "techName": "pink",
             "displayName": "Pink",

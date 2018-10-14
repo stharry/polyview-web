@@ -73,7 +73,7 @@
         "thumbnail": "assets/images/Bethesda_house_Thumbanil.jpg",
         "unlisted": true
     },
-        "deer_head": {
+     "deer_head": {
         "name": "Deer Head",
         "claraId": "f27cc413-b223-4b66-bb1c-be4c19c3e0ce",        
         "thumbnail": "assets/images/Deer_Head_Thumbnail.jpg",

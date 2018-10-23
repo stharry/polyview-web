@@ -73,7 +73,7 @@
         "thumbnail": "assets/images/Bethesda_house_Thumbanil.jpg",
         "unlisted": true
     },
-        "popup_lighting-deer_head": {
+    "popup_lighting-deer_head": {
         "name": "Deer Head",
         "thumbnail": "assets/images/Deer_Head_Thumbnail.jpg",
         "colorVariations" : [{
